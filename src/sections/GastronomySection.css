@@ -1,0 +1,111 @@
+.gastronomy {
+  position: relative;
+  padding: 4.5rem 1rem;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.gastronomy__title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0 0 2rem;
+  max-width: 1120px;
+  margin-inline: auto;
+}
+
+.gastronomy__content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  max-width: 25rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+
+.gastronomy__options {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 260px;
+  flex-shrink: 0;
+}
+
+.gastronomy__option {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 18px 20px;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #9aa0a6;
+  background: #fff;
+  border: 1px solid transparent;
+  cursor: pointer;
+  text-align: left;
+  transition: all 0.2s ease;
+}
+
+.gastronomy__icon {
+  width: 34px;
+  height: 34px;
+  color: #d7d7d7;
+  transition: color 0.3s ease;
+}
+
+.gastronomy__option.active {
+  color: #e82147;
+  box-shadow: 0 10px 26px rgba(232, 33, 71, 0.1);
+  transform: translateY(-2px);
+}
+
+.gastronomy__option.active .gastronomy__icon {
+  color: #e82147;
+}
+
+.gastronomy__option:not(.active):hover {
+  color: #e82147;
+  border-color: #e82147;
+  transform: translateY(-2px);
+}
+
+.gastronomy__option:not(.active):hover .gastronomy__icon {
+  color: #e82147;
+}
+
+.gastronomy__image-wrapper {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  max-width: 480px;
+  width: 100%;
+}
+
+.gastronomy__image {
+  width: 100%;
+  max-width: 480px;
+  max-height: 280px;
+  object-fit: cover;
+  box-shadow: 0 6px 18px rgba(2, 6, 23, 0.06);
+}
+
+.gastronomy__deco {
+  position: absolute;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.deco-left {
+  top: 10%;
+  left: 5%;
+  width: 7rem;
+}
+
+.deco-right {
+  top: 18rem;
+  right: 15rem;
+  transform: translateY(-50%);
+  width: 7rem;
+}

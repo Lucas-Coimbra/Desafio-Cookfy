@@ -1,0 +1,163 @@
+.sidebar-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(112, 112, 112, 0.6);
+  z-index: 998;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 440px;
+  height: 100vh;
+  background: #fff;
+  padding: 4rem 2rem 1rem 5rem;
+  display: flex;
+  flex-direction: column;
+  z-index: 999;
+}
+
+.sidebar-close {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #000;
+  margin-left: 0;
+}
+
+.sidebar-close img {
+  display: block;
+  width: 20px;
+  height: 20px;
+}
+
+.sidebar-user {
+  margin: 3rem 0 1.5rem 0;
+  text-align: left;
+}
+
+.sidebar-user-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 1rem;
+}
+
+.sidebar-avatar-wrapper {
+  background: #e82147;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+
+.sidebar-avatar {
+  width: 70%;
+  height: 70%;
+  object-fit: contain;
+  display: block;
+}
+
+.sidebar-username {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #e82147;
+}
+
+.sidebar-contact p {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 0.75rem 0;
+  font-size: 0.9rem;
+  color: #000;
+}
+
+.sidebar-contact-icon {
+  width: 16px;
+  height: 16px;
+}
+
+.sidebar-plan {
+  margin-bottom: 1.5rem;
+  margin-right: 4rem;
+}
+
+.sidebar-plan-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.6rem;
+}
+
+.sidebar-plan-header h4 {
+  font-family: "Playfair Display", serif;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #141414;
+  margin: 0;
+}
+
+.sidebar-plan-header p {
+  font-size: 1rem;
+  font-weight: 550;
+  color: #141414;
+  margin: 0;
+}
+
+.progress-bar {
+  width: 100%;
+  background: #eee;
+  height: 1rem;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+
+.progress {
+  width: 50%;
+  height: 100%;
+  background: #e82147;
+  transition: width 0.3s ease;
+}
+
+.btn-annual {
+  width: 100%;
+  height: 3rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 1.5px 3px 0 rgba(0, 0, 0, 0.16);
+  background-color: #e82147;
+  color: #fff;
+  border: none;
+  font-size: 1.2rem;
+  font-weight: 550;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.sidebar-options {
+  list-style: none;
+  padding: 0;
+  margin-top: 3rem;
+}
+
+.sidebar-options li {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.6rem 0;
+  font-size: 0.9rem;
+  color: #333;
+  cursor: pointer;
+}

@@ -1,0 +1,117 @@
+.welcome {
+  background: #ffdbbc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3.2rem 4rem 5.5rem 4rem;
+  position: relative;
+  gap: 10rem;
+}
+
+.welcome::before {
+  content: "";
+  position: absolute;
+  left: 4rem;
+  top: 40%;
+  transform: translateY(-50%);
+  width: 150px;
+  height: 260px;
+  background: url("../assets/elemento-2.svg") no-repeat center/contain;
+  pointer-events: none;
+  opacity: 0.95;
+}
+
+.welcome-text {
+  max-width: 40%;
+  z-index: 2;
+  font-weight: bold;
+  padding-left: 4rem;
+}
+
+.welcome-greeting,
+.welcome-name {
+  line-height: 1.34;
+  font-size: 2.5rem;
+  font-style: normal;
+  margin: 0;
+}
+.welcome-greeting {
+  color: #0f172a;
+}
+
+.welcome-name {
+  color: #e82147;
+}
+
+.welcome-community .contrib {
+  margin: 2rem 0 0 0;
+  color: #0f172a;
+  font-size: 0.98rem;
+}
+
+.welcome-community .author {
+  margin-top: 0.35rem;
+  color: #e82147;
+  font-size: 0.95rem;
+}
+
+.welcome-card {
+  position: relative;
+  width: 360px;
+  z-index: 2;
+}
+
+.dish-bg {
+  position: absolute;
+  left: -50px;
+  top: -25px;
+  width: 320px;
+  height: 230px;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.dish-box {
+  position: relative;
+  background: #fff;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(2, 6, 23, 0.08);
+  z-index: 2;
+  width: 230px;
+  height: 190px;
+}
+
+.dish {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.dish-footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  padding: 16px 14px;
+  background: #fff;
+  color: #e82147;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.dish-box:hover .dish-footer {
+  opacity: 1;
+}
+
+.dish-arrow {
+  width: 18px;
+  height: 18px;
+}
