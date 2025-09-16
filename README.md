@@ -13,18 +13,20 @@ Hospedado no GitHub Pages.
 
 ## 📂 Estrutura das Branches
 
-- **`main`** → contém o código-fonte completo (React, Vite, etc).  
-- **`gh-pages`** → contém apenas os arquivos gerados pelo build, usados pelo GitHub Pages para exibir o site online.  
+- **`main`** → contém o código-fonte completo (React, Vite, etc).
+- **`gh-pages`** → contém apenas os arquivos gerados pelo build, usados pelo GitHub Pages para exibir o site online.
 
 ---
 
 ## 🛠️ Como rodar localmente
 
 ### Pré-requisitos
-- [Node.js](https://nodejs.org/) instalado (versão LTS recomendada).  
+
+- [Node.js](https://nodejs.org/) instalado (versão LTS recomendada).
 - [Git](https://git-scm.com/) para clonar o repositório.
 
 ### Passo a passo
+
 ```bash
 # 1. Clone o repositório
 git clone https://github.com/lucas-coimbra/Desafio-Cookfy.git
@@ -72,11 +74,12 @@ git checkout main
 
 ---
 
-## 📸 Layout
+## 📸 Preview
 
-(Opcional: pode colocar prints ou GIFs da interface aqui)
+![Preview do Projeto](./src/assets/PrintPage.png)
 
 ---
 
 ## 📄 Licença
-Este projeto é de uso pessoal/estudo.  
+
+Este projeto foi um desafio de 1 semana para estudos.
